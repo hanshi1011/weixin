@@ -1,0 +1,4 @@
+<view>
+	123
+	<image src="images/like.png" />
+</view>
