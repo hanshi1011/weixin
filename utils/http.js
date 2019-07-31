@@ -17,7 +17,7 @@ class HTTP {
 				'content-type':'application/json',
 				'appkey':config.appkey
 			},
-			sucess:function(res){
+			success:(res)=>{
 				var code = res.statusCode.toString(),
 					startChar = code.charAt(0);
 				if(startChar == '2'){
@@ -26,7 +26,7 @@ class HTTP {
 					params.error && params.error(res) 
 				}
 			},
-			fail:function(err){
+			fail:(err)=>{
 				params.fail && params.fail(err)
 			}
 		});
